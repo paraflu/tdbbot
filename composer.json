@@ -1,5 +1,5 @@
 {
-    "name": "yourproject/yourproject",
+    "name": "tdbbot/tdbbot",
     "type": "project",
     "require": {
         "php": ">=5.5.0",
