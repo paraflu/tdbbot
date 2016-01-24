@@ -1,0 +1,4 @@
+{
+	"linguaggio":{ "file":"command/linguaggio.js" },
+	"impanatrice":{ "file":"command/impanatrice.js" }
+}
