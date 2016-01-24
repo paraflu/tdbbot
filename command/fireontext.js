@@ -15,17 +15,17 @@ FireOnText.prototype.onMessage = function(bot, chat_id, from, message)
 	return;
 
      if (this.ceggiaL8.test(text)) {
-       this.sendSticker(chat_id, STK_JARVIS);
+       bot.sendSticker(chat_id, STK_JARVIS);
        return;
      }
 
      if (this.fossaltaL8.test(text)) {
-       this.sendPhoto(chat_id, fs.createReadStream('images/fossaltal8.jpg'), 'FOSSALTA L8');
+       bot.sendPhoto(chat_id, fs.createReadStream('images/fossaltal8.jpg'), 'FOSSALTA L8');
        return;
      }
 	
      if (this.coc.test(text)) {
-     	this.sendSticker(chat_id, STK_COC);
+     	bot.sendSticker(chat_id, STK_COC);
 	return;
      }
 
