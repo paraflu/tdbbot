@@ -11,7 +11,7 @@ FireOnText = function()
 
 FireOnText.prototype.onMessage = function(bot, chat_id, from, message)
 {
-     if (test === undefined)
+     if (text === undefined)
 	return;
 
      if (this.ceggiaL8.test(text)) {
