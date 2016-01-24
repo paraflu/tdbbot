@@ -59,7 +59,7 @@ var bot = function(token, webhookUrl) {
 
          text = Message.text;
 
-         //console.log(Message);
+         console.log(Message);
 
      ////////////////////////
      // Extend from here:  //
@@ -72,17 +72,17 @@ var bot = function(token, webhookUrl) {
         	if (Message !== undefined) {
 		        cmd.onMessage(this, chat_id, Message.from, text);
 	        }
-	} catch (e) {
+	    } catch (e) {
 		console.log(e);
-	}
-     }
+	   }
+    }
 
      // echo
      var myZap = new RegExp(/myzap/i);
      var mention = new RegExp(/@tdb_bot/i);
      if (myZap.test(Message.from.username) && mention.test(text))
      {
-         this.sendMessage(chat_id, "<b>Vanculo!</>");
+         this.sendMessage(chat_id, "<b>Vanculo!</>", "HTML");
      }
 
      var ceggiaL8 = new RegExp(/ceggia.*l8/i);

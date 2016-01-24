@@ -1,4 +1,5 @@
 {
 	"linguaggio":{ "file":"command/linguaggio.js" },
-	"impanatrice":{ "file":"command/impanatrice.js" }
+	"impanatrice":{ "file":"command/impanatrice.js" },
+	"help":{ "file":"command/help.js", "command": "help", "help":"questo messaggio" }
 }

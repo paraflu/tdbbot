@@ -18,8 +18,7 @@ dotenv.load();
 
 // telegram bot
 var bot = require(__dirname + '/bot.js');
-//var token = '160932232:AAHPGpzo86I4BtsBKQfzeSR7FLnkd-0fc4c';
-//var webhookUrl = 'https://tdbbot.herokuapp.com/'
+
 var bot1 = new bot(process.env.TOKEN || token, process.env.WEBHOOK || webhookUrl);
 
 

@@ -18,6 +18,7 @@ var parafluid = "11570754";
 // Alice.sendPhoto('your-chat-id', fs.createReadStream(__dirname+'/alexiuss.jpg'), 'Chronoscape by Alexiuss').then(console.log)
 
 
+
 // var kb = {
 //         keyboard: [
 //             ['one'],
@@ -27,11 +28,6 @@ var parafluid = "11570754";
 //         one_time_keyboard: true
 //     };
 // Alice.sendMessage('your-chat-id', "Choose a lucky number", undefined, undefined, kb)
-
-
-
-
-
 
 
 // A test bot (req) to send sample message to the main bot
@@ -44,7 +40,7 @@ var testopt = {
             "message_id": 14,
             "from": {
                 "id": 86953862,
-                "first_name": "your name",
+                "first_name": "MikaMohawk",
                 "last_name": "your lastname",
                 "username": "your username",
             },
@@ -56,7 +52,7 @@ var testopt = {
             },
 
             "date": 1435524670,
-            "text": "\/td aapl,goog"
+            "text": "buongiorno"
         }
     })
 }

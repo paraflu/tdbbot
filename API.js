@@ -220,6 +220,7 @@ API.prototype.sendMessage = function(first, text, disable_web_page_preview, repl
             reply_to_message_id: reply_to_message_id,
             reply_markup: JSON.stringify(reply_markup)
         };
+    console.log("MSG:" + text);
     return this.reqBot('sendMessage', options);
 }
 
