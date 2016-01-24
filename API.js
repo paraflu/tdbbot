@@ -211,12 +211,12 @@ API.prototype.getMe = function() {
  * // → 'Choose a lucky number' is sent, with custom reply keyboard
  * 
  */
-API.prototype.sendMessage = function(first, text, parse_mode, disable_web_page_preview, reply_to_message_id, reply_markup) {
+API.prototype.sendMessage = function(first, text, /*parse_mode, */ disable_web_page_preview, reply_to_message_id, reply_markup) {
     var options = _.isObject(first) ?
         first : {
             chat_id: first,
             text: text || 'null-guarded; Your method is sending empty text.',
-            parse_mode: parse_mode,
+            /*parse_mode: parse_mode,*/
             disable_web_page_preview: disable_web_page_preview,
             reply_to_message_id: reply_to_message_id,
             reply_markup: JSON.stringify(reply_markup)
