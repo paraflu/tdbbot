@@ -14,8 +14,7 @@ Impanatrice.prototype.onMessage = function(bot, chat_id, from, message)
 {
 	var IMPANATRICE = new RegExp(/MikaMohawk/i);
 	var buongiorno = new RegExp(/buon\s*giorno/i);
-	console.log(from);
-	if (from !== undefined && IMPANATRICE.test(from.username)) {
+	if (from !== undefined && IMPANATRICE.test(from.username) && buongiorno.test(message)) {
 	  bot.sendMessage(chat_id, printf(this.messages.getMessage(), from.username));
 	}
 }

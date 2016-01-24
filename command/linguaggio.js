@@ -8,10 +8,10 @@ var Linguaggio = function() {
   this.messages.push("eddddai @%s linguaggio!");
   this.messages.push("@%s, baci tua madre con quella bocca?!");
   this.messages.push("@%s continuiamo?");
-  this.messages.push("@%s <b>LINGUAGGIO<b>!");
+  this.messages.push("@%s LINGUAGGIO!");
   this.messages.push("@%s...!");
   this.messages.push("Linguaggio @%s!");
-  this.messages.push("<a href='https://it.wiktionary.org/wiki/volgare'>Linguaggio @%s</a>!");
+  //this.messages.push("<a href='https://it.wiktionary.org/wiki/volgare'>Linguaggio @%s</a>!");
 }
 
 

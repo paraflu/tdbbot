@@ -3,47 +3,43 @@
 	{
 		"selected_items":
 		[
+			[
+				"parse",
+				"parse_mode"
+			],
+			[
+				"mat",
+				"matcharray"
+			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "apps.json",
-			"settings":
-			{
-				"buffer_size": 105,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "API.js",
-			"settings":
-			{
-				"buffer_size": 19243,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": ".env",
-			"settings":
-			{
-				"buffer_size": 100,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 0.0,
+		"height": 33.0,
 		"selected_items":
 		[
+			[
+				"Package Control: LI",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
 		],
-		"width": 0.0
+		"width": 449.0
 	},
 	"console":
 	{
-		"height": 0.0
+		"height": 404.0
 	},
 	"distraction_free":
 	{
@@ -56,10 +52,24 @@
 	},
 	"file_history":
 	[
+		"/home/andrea/project/tdbbot/command/impanatrice.js",
+		"/home/andrea/project/tdbbot/.env",
+		"/home/andrea/project/tdbbot/views/index.html",
+		"/home/andrea/project/tdbbot/app.json",
+		"/home/andrea/project/tdbbot/Procfile",
+		"/home/andrea/project/tdbbot/tt.js",
+		"/home/andrea/project/tdbbot/index.js",
+		"/home/andrea/project/tdbbot/command/help.js",
+		"/home/andrea/project/tdbbot/testbot.js",
+		"/home/andrea/project/tdbbot/command/linguaggio.js",
+		"/home/andrea/project/tdbbot/bot.js",
+		"/home/andrea/project/tdbbot/API.js",
+		"/home/andrea/project/tdbbot/apps.json",
+		"/home/andrea/project/tdbbot/herokucmds.txt"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -73,6 +83,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"sendMes",
+			"sendMe",
+			"v"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -90,89 +103,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "apps.json",
-					"settings":
-					{
-						"buffer_size": 105,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "API.js",
-					"settings":
-					{
-						"buffer_size": 19243,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": ".env",
-					"settings":
-					{
-						"buffer_size": 100,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								100,
-								100
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -228,7 +160,7 @@
 		],
 		"width": 0.0
 	},
-	"show_minimap": true,
+	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,

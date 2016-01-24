@@ -11,8 +11,6 @@ var apps = require(__dirname+'/apps.json');
 // API as superclass that bot inherits methods from
 var API = require(__dirname + '/API.js');
 
-const STK_JARVIS='BQADBAADPQQAAv1q5gNSipU1gQABY-UC';
-
 // The bot object prototype
 // bot extends and inherits methods of API
 var bot = function(token, webhookUrl) {
@@ -82,20 +80,21 @@ var bot = function(token, webhookUrl) {
      var mention = new RegExp(/@tdb_bot/i);
      if (myZap.test(Message.from.username) && mention.test(text))
      {
-         this.sendMessage(chat_id, "<b>Vanculo!</>", "HTML");
+         this.sendMessage(chat_id, "Vanculo!");
      }
 
-     var ceggiaL8 = new RegExp(/ceggia.*l8/i);
+     /*var ceggiaL8 = new RegExp(/ceggia.*l8/i);
      if (ceggiaL8.test(text)) {
        this.sendSticker(chat_id, STK_JARVIS);
      }
 
      var fossaltaL8 = new RegExp(/fossalta/i);
+
      if (fossaltaL8.test(text)) {
        this.sendPhoto(chat_id, fs.createReadStream('images/fossaltal8.jpg'), 'FOSSALTA L8');
-     }
+     }*/
 
-     if (Message.text !== undefined && Message.text.indexOf("/") == 0) {
+     /*if (Message.text !== undefined && Message.text.indexOf("/") == 0) {
         switch (Message.text) {
           case "/help":
             this.sendMessage(chat_id, "si ok, in 10 minuti potevo far altro?");
@@ -103,7 +102,7 @@ var bot = function(token, webhookUrl) {
           default:
 
         }
-     }
+     }*/
      //this.sendMessage(chat_id, "you said: " + Message.text);
 
  }
