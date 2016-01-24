@@ -11,7 +11,7 @@ Helper.prototype.onMessage = function(bot, chat_id, from, message)
 {
 	var regCommand = new RegExp(/\/(.*)\s*/);
 	if (regCommand.test(message)) {
-		var matcharray = regCommand.match(message);
+		var matcharray = message.match(regCommand);
 
 		switch (matcharray[1]) {
 			case 'help':
