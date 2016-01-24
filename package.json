@@ -22,12 +22,12 @@
     "sample",
     "Heroku"
   ],
-  "author": "kengz",
+  "author": "paraflu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kengz/telegram-bot-bootstrap/issues"
+    "url": "https://github.com/paraflu/tdbbot/issues"
   },
-  "homepage": "https://github.com/kengz/telegram-bot-bootstrap",
+  "homepage": "https://github.com/paraflu/tdbbot",
   "dependencies": {
     "body-parser": "^1.13.2",
     "ejs": "^2.3.1",
