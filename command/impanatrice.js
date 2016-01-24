@@ -12,8 +12,9 @@ var Impanatrice = function() {
 
 Impanatrice.prototype.onMessage = function(bot, chat_id, from, message)
 {
+	var IMPANATRICE = new RegExp(/paraflu/i); //new RegExp(/MikaMohawk/i);
 	var buongiorno = new RegExp(/buon\s*giorno/i);
-	if (from !== undefined && from.username == "MikaMohawk") {
+	if (from !== undefined && IMPANATRICE.test(from.username)) {
 	  bot.sendMessage(chat_id, printf(this.messages.getMessage(), from.username));
 	}
 }
