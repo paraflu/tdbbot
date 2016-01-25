@@ -14,26 +14,30 @@ FireOnText = function()
 
 FireOnText.prototype.onMessage = function(bot, chat_id, from, message)
 {
-     if (text === undefined)
-	return;
+     try {
+	     if (text === undefined)
+		return;
 
-     if (this.ceggiaL8.test(text)) {
-       bot.sendSticker(chat_id, STK_JARVIS);
-       return;
-     }
+	     if (this.ceggiaL8.test(text)) {
+	       bot.sendSticker(chat_id, STK_JARVIS);
+	       return;
+	     }
 
-     if (this.fossaltaL8.test(text)) {
-       bot.sendPhoto(chat_id, fs.createReadStream('images/fossaltal8.jpg'), 'FOSSALTA L8');
-       return;
-     }
+	     if (this.fossaltaL8.test(text)) {
+	       bot.sendPhoto(chat_id, fs.createReadStream('images/fossaltal8.jpg'), 'FOSSALTA L8');
+	       return;
+	     }
 
-     if (this.coc.test(text)) {
-     	bot.sendSticker(chat_id, STK_COC);
-	     return;
-     }
+	     if (this.coc.test(text)) {
+		bot.sendSticker(chat_id, STK_COC);
+		     return;
+	     }
 
-     if (this.jesolol8.test(text) && from.username !== undefined) {
-       bot.sendMessage(chat_id, printf("seeeee @%s credici..", from.username));
+	     if (this.jesolol8.test(text) && from.username !== undefined) {
+	       bot.sendMessage(chat_id, printf("seeeee @%s credici..", from.username));
+	     }
+     } catch (e) {
+	     console.log("Errore in FireOnText.onMessge " + e.toString());
      }
 
 }
