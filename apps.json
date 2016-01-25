@@ -1,7 +1,7 @@
 {
 	"linguaggio":{ "file":"command/linguaggio.js" }
 	,"impanatrice":{ "file":"command/impanatrice.js" }
-	,"loadiiing":{ "file":"command/loadiiing.js" }
+	/*,"loadiiing":{ "file":"command/loadiiing.js" }*/
 	,"help":{ "file":"command/help.js", "command": "help", "help":"questo messaggio" }
 	,"messagefire": {
 		"file": "command/fireontext.js"
