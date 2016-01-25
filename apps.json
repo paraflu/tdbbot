@@ -5,4 +5,7 @@
 	,"messagefire": {
 		"file": "command/fireontext.js"
 	}
+	,"loadiiing": {
+		"file": "command/loadiiing.js"
+	}
 }

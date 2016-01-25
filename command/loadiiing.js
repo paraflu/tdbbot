@@ -10,10 +10,12 @@ var Loadiiing = function() {
 
 Loadiiing.prototype.onMessage = function(bot, chat_id, from, message)
 {
-	var Loadiiing = new RegExp(/MikaMohawk/i);
+	var Loadiiing = new RegExp(/Loadiiing/i);
 	var buongiorno = new RegExp(/buon\s*giorno|ciao/i);
 	if (from !== undefined && Loadiiing.test(from.username)) {
-	  bot.sendMessage(chat_id, printf(this.messages.getMessage(), from.username));
+    if (buongiorno.test(message)) {
+	     bot.sendMessage(chat_id, printf(this.messages.getMessage(), from.username));
+     }
 	}
 }
 
