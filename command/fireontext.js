@@ -32,7 +32,7 @@ FireOnText.prototype.onMessage = function(bot, chat_id, from, message)
      }
 
      if (this.jesolol8.test(text) && from.username !== undefined) {
-       bot.sendMessage(chat_id, printf("seeeee %s credici..", from.username));
+       bot.sendMessage(chat_id, printf("seeeee @%s credici..", from.username));
      }
 
 }
