@@ -1,4 +1,5 @@
 var printf = require('printf');
+var fs = require('fs');
 
 const STK_JARVIS='BQADBAADPQQAAv1q5gNSipU1gQABY-UC';
 const STK_COC = 'BQADAQAD6AEAAsGZigABPCp4PLTfUA8C';
