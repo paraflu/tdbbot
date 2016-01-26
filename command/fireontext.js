@@ -41,7 +41,7 @@ FireOnText.prototype.onMessage = function(bot, chat_id, from, message)
 	     }
 
        if (this.figa.test(text) || this.tette.test(text)) {
-         bot.sendSticker(chat_id, pintf("@%s verghine...", from.usrername));
+         bot.sendSticker(chat_id, printf("@%s verghine...", from.usrername));
          combo++;
        }
 
@@ -58,7 +58,7 @@ FireOnText.prototype.onMessage = function(bot, chat_id, from, message)
        }
 
      } catch (e) {
-	     console.log("Errore in FireOnText.onMessge " + e.toString());
+	     console.log("Errore in FireOnText.onMessage " + e.toString());
      }
 
 }
