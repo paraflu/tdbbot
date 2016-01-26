@@ -41,7 +41,7 @@ FireOnText.prototype.onMessage = function(bot, chat_id, from, message)
 	     }
 
        if (this.figa.test(text) || this.tette.test(text)) {
-         bot.sendSticker(chat_id, printf("@%s verghine...", from.usrername));
+         bot.sendMessage(chat_id, printf("@%s verghine...", from.usrername));
          combo++;
          //return
        }
