@@ -43,6 +43,7 @@ FireOnText.prototype.onMessage = function(bot, chat_id, from, message)
        if (this.figa.test(text) || this.tette.test(text)) {
          bot.sendSticker(chat_id, printf("@%s verghine...", from.usrername));
          combo++;
+         //return
        }
 
 	     if (this.jesolol8.test(text) && from.username !== undefined) {
@@ -52,9 +53,9 @@ FireOnText.prototype.onMessage = function(bot, chat_id, from, message)
 	     }
 
        if (combo > 3) {
-         bot.sendMessage(printf("@%s ... GENIO!!!", from.username));
-       } else if (combo > 0) {
-         bot.sendMessage(printf("@%s ... COMBO!!!", from.username));
+         bot.sendMessage(chat_id, printf("@%s ... GENIO!!!", from.username));
+       } else if (combo > 1) {
+         bot.sendMessage(chat_id, printf("@%s ... COMBO!!!", from.username));
        }
 
      } catch (e) {
