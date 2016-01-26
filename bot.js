@@ -57,7 +57,7 @@ var bot = function(token, webhookUrl) {
 
          text = Message.text;
 
-         console.log(Message);
+         //console.log(Message);
 
      ////////////////////////
      // Extend from here:  //
@@ -65,23 +65,17 @@ var bot = function(token, webhookUrl) {
      // you may call the methods from API.js, which are all inherited by this bot class
 
      for (app in apps) {
-        try {
-        	var cmd = require(__dirname + "/" + apps[app].file);
-        	if (Message !== undefined) {
+      	var cmd = require(__dirname + "/" + apps[app].file);
+      	if (Message !== undefined) {
+          try {
 		        cmd.onMessage(this, chat_id, Message.from, text);
-	        }
-	    } catch (e) {
-		console.log(e);
-	   }
+          } catch (e) {
+              console.log("Errore in onMessage di " + app);
+          }
+        }
     }
 
      // echo
-     var myZap = new RegExp(/myzap/i);
-     var mention = new RegExp(/@tdb_bot/i);
-     if (myZap.test(Message.from.username) && mention.test(text))
-     {
-         this.sendMessage(chat_id, "Vanculo!");
-     }
 
      /*var ceggiaL8 = new RegExp(/ceggia.*l8/i);
      if (ceggiaL8.test(text)) {
