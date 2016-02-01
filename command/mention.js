@@ -7,13 +7,9 @@ Mention = function() {
 
   this.cn_joke = function(chat_id)
   {
+    var cn = require('chuck-norris-api');
     options = {}
     cn.getRandom(options).then(function (data) {
-        console.log(data.value.joke);
-    });var cn = require('chuck-norris-api');
-    options = {}
-    cn.getRandom(options).then(function (data) {
-        console.log();
         this.sendMessage(chat_id, data.value.joke);
     });
   }
@@ -31,7 +27,8 @@ Mention = function() {
       this.sendMessage(chat_id, sprintf("chi dice sa di esserlo @%s nànanànàaaana", from.username));
     }
 
-    if (/\/chuck/i.test(message))
+    var chuck = new RegExp(/\/chuck/i);
+    if (chuck.test(message))
       this.cn_joke(chat_id);
 
   }
