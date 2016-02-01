@@ -70,7 +70,7 @@ var bot = function(token, webhookUrl) {
           try {
 		        cmd.onMessage(this, chat_id, Message.from, text);
           } catch (e) {
-              console.log("Errore in onMessage di " + app);
+              console.log("Errore in onMessage di " + app + " eccezione:" + e);
           }
         }
     }
