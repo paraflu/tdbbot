@@ -17,10 +17,10 @@ Mention = function() {
   this.onMessage = function(bot, chat_id, from, message)
   {
     var myZap = new RegExp(/myzap/i);
-    if (myZap.test(from.username))
+    /*if (myZap.test(from.username) )
     {
       bot.sendMessage(chat_id, sprintf("Vanculo %s!", from.username));
-    }
+    }*/
 
     var offesa = new RegExp(/merda|s.ronzo|scemo|stupido|cazzo/i);
     if (offesa.test(message)) {
