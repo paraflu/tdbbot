@@ -1,4 +1,4 @@
-var sprintf = require('prinf');
+var sprintf = require('printf');
 var cn = require('chuck-norris-api');
 
 
@@ -31,7 +31,7 @@ Mention = function() {
       this.sendMessage(chat_id, sprintf("chi dice sa di esserlo @%s nànanànàaaana", from.username));
     }
 
-    if (/\/chuck/.test(message))
+    if (/\/chuck/i.test(message))
       this.cn_joke(chat_id);
 
   }
