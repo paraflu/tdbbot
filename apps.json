@@ -5,7 +5,6 @@
 	,"messagefire": {
 		"file": "command/fireontext.js"
 	}
-	,"loadiiing": {
-		"file": "command/loadiiing.js"
-	}
+	,"loadiiing": {	"file": "command/loadiiing.js"}
+	,"mention": {	"file": "command/mention.js"}
 }

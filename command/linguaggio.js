@@ -17,7 +17,7 @@ var Linguaggio = function() {
 
 Linguaggio.prototype.onMessage = function(bot, chat_id, from, message)
 {
-	var linguaggioRe = new RegExp(/[fv]anculo|[crml]azz[io]|merda|stronzo/i);
+	var linguaggioRe = new RegExp(/[fv]anculo|[crml]azz[io]|merda|stronz[ao]|culo/i);
 	if (linguaggioRe.test(message)) {
 		bot.sendMessage(chat_id, printf(this.messages.getMessage(), from.username), "HTML");
 	}

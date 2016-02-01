@@ -17,8 +17,9 @@ FireOnText = function()
 
 FireOnText.prototype.onMessage = function(bot, chat_id, from, message)
 {
+  var combo=0;
      try {
-       var combo=0;
+
 	     if (text === undefined)
 		      return;
 
@@ -52,16 +53,16 @@ FireOnText.prototype.onMessage = function(bot, chat_id, from, message)
          //return;
 	     }
 
-       if (combo > 3) {
+       /*if (combo > 3) {
          bot.sendMessage(chat_id, printf("@%s ... GENIO!!!", from.username));
        } else if (combo > 1) {
          bot.sendMessage(chat_id, printf("@%s ... COMBO!!!", from.username));
-       }
+       }*/
 
      } catch (e) {
 	     console.log("Errore in FireOnText.onMessage " + e.toString());
      }
-
+    return combo;
 }
 
 module.exports = new FireOnText();

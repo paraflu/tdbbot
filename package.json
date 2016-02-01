@@ -30,15 +30,18 @@
   "homepage": "https://github.com/paraflu/tdbbot",
   "dependencies": {
     "body-parser": "^1.13.2",
+    "chuck": "0.0.4",
+    "chuck-norris-api": "^1.0.8",
+    "coffee-script": "^1.10.0",
     "ejs": "^2.3.1",
     "express": "^4.13.1",
     "lomath": "^0.1.6",
     "morgan": "^1.6.1",
     "multer": "^0.1.8",
+    "printf": "^0.2.3",
     "q": "^1.4.1",
     "reqscraper": "0.0.2",
-    "request": "^2.58.0",
-    "printf": "^0.2.3"
+    "request": "^2.58.0"
   },
   "devDependencies": {
     "chai": "^3.0.0",
